@@ -1,0 +1,54 @@
+* Variables for modes
+
+** Display & Input
+
+*** Description
+
+Basic display & inputs:
+- retain menu bar
+- disable tool bar
+- disable scroll bar
+- disable splash screen
+- disable backup files (PITA if using version control)
+- enable line numbers everywhere
+- enable column numbers too
+- start in maximised window (NOT full screen)
+- replace typing yes/no with y/n
+ 
+*** Code
+
+#+BEGIN_SRC emacs-lisp
+(menu-bar-mode 1)
+(tool-bar-mode -1)
+(scroll-bar-mode -1)
+(setq inhibit-splash-screen t)
+(setq make-backup-files nil)
+(global-linum-mode 1)
+(setq column-number-mode t)
+(toggle-frame-maximized)
+(defalias 'yes-or-no-p 'y-or-n-p)
+#+END_SRC
+
+** ido
+
+*** description
+Interactive DO. Does neat things like autocomplete for loading files and buffers.
+
+- enables ido mode
+- sets ido for all buffers
+- enables flexible matching, for names in any location
+- guesses filenames if needed???
+- create new buffers always
+- sets preference order for files, sorted by extension
+
+*** Code
+
+#+BEGIN_SRC emacs-lisp
+(ido-mode 1)
+(setq ido-everywhere t)
+(setq ido-enable-flex-matching t)
+(setq ido-use-filename-at-point 'guess)
+(setq ido-create-newbuffer 'always)
+(setq ido-file-extension-order '(".py" ".ipynb" ".csv" ".txt" ".org" ".el"))
+#+END
+
