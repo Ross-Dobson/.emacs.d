@@ -27,6 +27,7 @@ Basic display & inputs:
 (setq column-number-mode t)
 (toggle-frame-maximized)
 (defalias 'yes-or-no-p 'y-or-n-p)
+(global-hl-line-mode 1)
 #+END_SRC
 
 ** ido
