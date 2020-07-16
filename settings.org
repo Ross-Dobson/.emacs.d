@@ -1,3 +1,16 @@
+
+* Packages
+
+** melpa
+
+#+BEGIN_SRC emacs-lisp
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/" ) t)
+(package-initialize)
+
+#+END_SRC
+
+
+
 * Variables for modes
 
 ** Display & Input
@@ -14,6 +27,7 @@ Basic display & inputs:
 - enable column numbers too
 - start in maximised window (NOT full screen)
 - replace typing yes/no with y/n
+- highlights the current line
  
 *** Code
 
