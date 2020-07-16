@@ -66,3 +66,15 @@ Interactive DO. Does neat things like autocomplete for loading files and buffers
 (setq ido-create-newbuffer 'always)
 (setq ido-file-extension-order '(".py" ".ipynb" ".csv" ".txt" ".org" ".el"))
 #+END_SRC
+
+* Installed packages
+
+** ido grid mode
+
+*** Description
+    - ido suggestions in mini-buffer noww in grid form rather than having to cycle through single line
+*** Code
+
+#+BEGIN_SRC emacs-lisp
+(ido-grid-mode 1)
+#+END_SRC

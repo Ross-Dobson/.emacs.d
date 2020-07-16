@@ -9,7 +9,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (counsel cyberpunk-theme list-packages-ext yasnippet-snippets find-file-in-project elpy))))
+    (ido-grid-mode counsel cyberpunk-theme list-packages-ext yasnippet-snippets find-file-in-project elpy))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
