@@ -50,5 +50,4 @@ Interactive DO. Does neat things like autocomplete for loading files and buffers
 (setq ido-use-filename-at-point 'guess)
 (setq ido-create-newbuffer 'always)
 (setq ido-file-extension-order '(".py" ".ipynb" ".csv" ".txt" ".org" ".el"))
-#+END
-
+#+END_SRC
