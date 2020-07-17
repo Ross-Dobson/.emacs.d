@@ -31,6 +31,7 @@ Basic display & inputs:
 - remembers cursor position
 - auto-polls for changes and refreshes in unedited files (e.g. outputs, logs)
 - word wrapping forced to wrap whole words, not randomly halfway through
+- cursor is bar rather than block
 *** Code
 
 #+BEGIN_SRC emacs-lisp
@@ -83,23 +84,18 @@ Allows window configurations to be cycled with C-c right and C-c left
 #+END_SRC
 * Installed packages
 ** ido grid mode
-
 *** Description
 - ido suggestions in mini-buffer noww in grid form rather than having to cycle through single line
 *** Code
-
 #+BEGIN_SRC emacs-lisp
 (ido-grid-mode 1)
 #+END_SRC
-
 ** org bullets via superstar
-
 #+BEGIN_SRC emacs-lisp
 (org-superstar-mode)
 #+END_SRC
 ** ivy & swiper & counsel
 *** Description
-
 *** Code
 #+BEGIN_SRC emacs-lisp
 (ivy-mode 1)
@@ -145,6 +141,7 @@ Allows window configurations to be cycled with C-c right and C-c left
 (require 'paredit)
 (paredit-mode 1)
 #+END_SRC
+
 * Keybindings
 ** Description
 When I think of a useful one, I'll add it here.

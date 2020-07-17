@@ -9,7 +9,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (paredit iedit magit org-superstar ido-grid-mode counsel cyberpunk-theme list-packages-ext yasnippet-snippets find-file-in-project elpy))))
+    (company paredit iedit magit org-superstar ido-grid-mode counsel cyberpunk-theme list-packages-ext yasnippet-snippets find-file-in-project elpy))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -23,3 +23,9 @@
 (require 'org-superstar)
 (add-hook 'org-mode-hook (lambda () (org-superstar-mode 1)))
 (put 'narrow-to-region 'disabled nil)
+
+;; Tell emacs where is your personal elisp lib dir
+(add-to-list 'load-path "~/.emacs.d/lisp/")
+
+(require 'cursor-chg)  ; Load the library
+(toggle-cursor-type-when-idle 1) ; Turn on cursor change when Emacs is idle
