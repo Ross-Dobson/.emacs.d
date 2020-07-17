@@ -132,6 +132,19 @@ Allows window configurations to be cycled with C-c right and C-c left
 #+BEGIN_SRC emacs-lisp
 (require 'magit)
 #+END_SRC
+** iedit
+*** Description
+*** Code
+#+BEGIN_SRC emacs-lisp
+(require 'iedit)
+#+END_SRC
+** paredit
+*** Description
+*** Code
+#+BEGIN_SRC emacs-lisp
+(require 'paredit)
+(paredit-mode 1)
+#+END_SRC
 * Keybindings
 ** Description
 When I think of a useful one, I'll add it here.
