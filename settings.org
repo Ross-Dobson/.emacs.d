@@ -28,6 +28,7 @@ Basic display & inputs:
 - highlights the current line
 - automatically closes opening brackets etc
 - shows matching brackets/parens etc 
+- remembers cursor position
 *** Code
 
 #+BEGIN_SRC emacs-lisp
@@ -43,6 +44,7 @@ Basic display & inputs:
 (global-hl-line-mode 1)
 (electric-pair-mode 1)
 (show-paren-mode 1)
+(savehist-mode 1)
 #+END_SRC
 
 ** ido
