@@ -26,7 +26,8 @@ Basic display & inputs:
 - start in maximised window (NOT full screen)
 - replace typing yes/no with y/n
 - highlights the current line
- 
+- automatically closes opening brackets etc
+- shows matching brackets/parens etc 
 *** Code
 
 #+BEGIN_SRC emacs-lisp
@@ -40,6 +41,8 @@ Basic display & inputs:
 (toggle-frame-maximized)
 (defalias 'yes-or-no-p 'y-or-n-p)
 (global-hl-line-mode 1)
+(electric-pair-mode 1)
+(show-paren-mode 1)
 #+END_SRC
 
 ** ido
