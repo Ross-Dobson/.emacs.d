@@ -82,7 +82,6 @@ Allows window configurations to be cycled with C-c right and C-c left
 (winner-mode 1)
 #+END_SRC
 * Installed packages
-
 ** ido grid mode
 
 *** Description
@@ -93,12 +92,12 @@ Allows window configurations to be cycled with C-c right and C-c left
 (ido-grid-mode 1)
 #+END_SRC
 
-**  org bullets via superstar
+** org bullets via superstar
 
 #+BEGIN_SRC emacs-lisp
 (org-superstar-mode)
 #+END_SRC
-** ivy & swuper & counsel
+** ivy & swiper & counsel
 *** Description
 
 *** Code
@@ -128,6 +127,11 @@ Allows window configurations to be cycled with C-c right and C-c left
 (define-key minibuffer-local-map (kbd "C-r") 'counsel-minibuffer-history)
 #+END_SRC
 
+** magit
+*** Code
+#+BEGIN_SRC emacs-lisp
+(require 'magit)
+#+END_SRC
 * Keybindings
 ** Description
 When I think of a useful one, I'll add it here.
