@@ -98,3 +98,9 @@ Allows window configurations to be cycled with C-c right and C-c left
 #+BEGIN_SRC emacs-lisp
 (org-superstar-mode)
 #+END_SRC
+* Keybindings
+** Description
+When I think of a useful one, I'll add it here.
+** Code
+#+BEGIN_SRC emacs-lisp
+#+END_SRC
