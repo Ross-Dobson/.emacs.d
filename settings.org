@@ -29,6 +29,7 @@ Basic display & inputs:
 - automatically closes opening brackets etc
 - shows matching brackets/parens etc 
 - remembers cursor position
+- auto-polls for changes and refreshes in unedited files (e.g. outputs, logs)
 *** Code
 
 #+BEGIN_SRC emacs-lisp
@@ -45,6 +46,7 @@ Basic display & inputs:
 (electric-pair-mode 1)
 (show-paren-mode 1)
 (savehist-mode 1)
+(global-auto-revert-mode 1)
 #+END_SRC
 
 ** ido
