@@ -74,6 +74,13 @@ Interactive DO. Does neat things like autocomplete for loading files and buffers
 (setq ido-file-extension-order '(".py" ".ipynb" ".csv" ".txt" ".org" ".el"))
 #+END_SRC
 
+** Winner mode
+*** Description
+Allows window configurations to be cycled with C-c right and C-c left
+*** Code
+#+BEGIN_SRC emacs-lisp
+(winner-mode 1)
+#+END_SRC
 * Installed packages
 
 ** ido grid mode
