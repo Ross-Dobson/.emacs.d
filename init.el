@@ -9,7 +9,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (ido-grid-mode counsel cyberpunk-theme list-packages-ext yasnippet-snippets find-file-in-project elpy))))
+    (org-superstar ido-grid-mode counsel cyberpunk-theme list-packages-ext yasnippet-snippets find-file-in-project elpy))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -19,3 +19,6 @@
 
 (add-hook 'after-init-hook 
 	  (lambda () (load-theme 'cyberpunk t)))
+
+(require 'org-superstar)
+(add-hook 'org-mode-hook (lambda () (org-superstar-mode 1)))

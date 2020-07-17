@@ -9,8 +9,6 @@
 
 #+END_SRC
 
-
-
 * Variables for modes
 
 ** Display & Input
@@ -72,9 +70,15 @@ Interactive DO. Does neat things like autocomplete for loading files and buffers
 ** ido grid mode
 
 *** Description
-    - ido suggestions in mini-buffer noww in grid form rather than having to cycle through single line
+- ido suggestions in mini-buffer noww in grid form rather than having to cycle through single line
 *** Code
 
 #+BEGIN_SRC emacs-lisp
 (ido-grid-mode 1)
+#+END_SRC
+
+**  org bullets via superstar
+
+#+BEGIN_SRC emacs-lisp
+(org-superstar-mode)
 #+END_SRC
