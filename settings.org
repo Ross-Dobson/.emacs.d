@@ -113,7 +113,7 @@ Allows window configurations to be cycled with C-c right and C-c left
 (global-set-key (kbd "<f6>") 'ivy-resume)
 (global-set-key (kbd "M-x") 'counsel-M-x)
 ;(global-set-key (kbd "C-x C-f") 'counsel-find-file) ;; KEEP IDO MODE INSTEAD
-(global-set-key (kbd "C-y") 'counsel-yank-pop)
+(global-set-key (kbd "M-y") 'counsel-yank-pop)
 (global-set-key (kbd "<f1> f") 'counsel-describe-function)
 (global-set-key (kbd "<f1> v") 'counsel-describe-variable)
 (global-set-key (kbd "<f1> o") 'counsel-describe-symbol)
@@ -127,7 +127,6 @@ Allows window configurations to be cycled with C-c right and C-c left
 (global-set-key (kbd "C-S-o") 'counsel-rhythmbox)
 (define-key minibuffer-local-map (kbd "C-r") 'counsel-minibuffer-history)
 #+END_SRC
-
 
 * Keybindings
 ** Description
