@@ -141,7 +141,18 @@ Allows window configurations to be cycled with C-c right and C-c left
 (require 'paredit)
 (paredit-mode 1)
 #+END_SRC
-
+** company
+*** Description
+- enables company mode after other stuffs loaded
+- enables company mode everywhere
+- company starts on the first character
+- company has no delay
+#+BEGIN_SRC emacs-lisp
+(add-hook 'after-init-hook 'global-company-mode)
+(global-company-mode t)
+(setq company-minimum-prefix-length 1)
+(setq company-idle-delay 0)
+#+END_SRC
 * Keybindings
 ** Description
 When I think of a useful one, I'll add it here.
