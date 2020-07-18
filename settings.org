@@ -147,6 +147,7 @@ Allows window configurations to be cycled with C-c right and C-c left
 - enables company mode everywhere
 - company starts on the first character
 - company has no delay
+*** Code
 #+BEGIN_SRC emacs-lisp
 (add-hook 'after-init-hook 'global-company-mode)
 (global-company-mode t)
@@ -160,7 +161,7 @@ Allows window configurations to be cycled with C-c right and C-c left
 *** Code
 #+BEGIN_SRC emacs-lisp
 (company-quickhelp-mode 1)
-(setq company-quickhelp-delay 0)
+(setq company-quickhelp-delay 1)
 #+END_SRC
 ** anaconda
 *** Description
@@ -212,4 +213,12 @@ Allows window configurations to be cycled with C-c right and C-c left
 When I think of a useful one, I'll add it here.
 ** Code
 #+BEGIN_SRC emacs-lisp
+#+END_SRC
+* elpa stuff temporarily
+#+BEGIN_SRC emacs-lisp
+(setq python-shell-interpreter "jupyter"
+      python-shell-interpreter-args "console --simple-prompt"
+      python-shell-prompt-detect-failure-warning nil)
+(add-to-list 'python-shell-completion-native-disabled-interpreters
+             "jupyter")
 #+END_SRC
