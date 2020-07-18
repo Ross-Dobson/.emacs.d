@@ -153,6 +153,15 @@ Allows window configurations to be cycled with C-c right and C-c left
 (setq company-minimum-prefix-length 1)
 (setq company-idle-delay 0)
 #+END_SRC
+** company-quickhelp
+*** Description
+- enable company quickhelp mode
+- no delay on quikchelp
+*** Code
+#+BEGIN_SRC emacs-lisp
+(company-quickhelp-mode 1)
+(setq company-quickhelp-delay 0)
+#+END_SRC
 * Keybindings
 ** Description
 When I think of a useful one, I'll add it here.
