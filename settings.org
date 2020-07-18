@@ -1,14 +1,11 @@
 
 * Packages
-
 ** melpa
-
 #+BEGIN_SRC emacs-lisp
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/" ) t)
 (package-initialize)
 
 #+END_SRC
-
 * Variables for modes
 
 ** Display & Input
