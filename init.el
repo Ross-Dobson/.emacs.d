@@ -1,5 +1,8 @@
 (package-initialize)
 
+(elpy-enable) ; enables elpy, bit ronseal innit
+
+
 (require 'org)
 (org-babel-load-file (expand-file-name "~/.emacs.d/settings.org"))
 (custom-set-variables
