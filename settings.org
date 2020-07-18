@@ -162,6 +162,20 @@ Allows window configurations to be cycled with C-c right and C-c left
 (company-quickhelp-mode 1)
 (setq company-quickhelp-delay 0)
 #+END_SRC
+** anaconda
+*** Description
+- adds hooks
+*** Code
+#+BEGIN_SRC emacs-lisp
+(add-hook 'python-mode-hook 'anaconda-mode)
+#+END_SRC
+** company-anaconda
+*** Description
+- who even knows anymore
+*** Code
+#+BEGIN_SRC emacs-lisp
+(add-to-list 'company-backends 'company-anaconda)
+#+END_SRC
 * Keybindings
 ** Description
 When I think of a useful one, I'll add it here.
