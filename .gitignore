@@ -1,8 +1,6 @@
-*.last
-*~
-*#
-settings.el
-elpa/
-history
-recentf
-transient/
+*
+!init.el
+!settings.org
+!lisp
+/lisp/*
+!/lisp/*.el
