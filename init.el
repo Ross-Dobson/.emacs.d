@@ -1,7 +1,7 @@
 (package-initialize)
 
-(elpy-enable) ; enables elpy, bit ronseal innit
-
+;(elpy-enable) ; enables elpy, bit ronseal innit
+(advice-add 'python-mode :before 'elpy-enable)
 
 (require 'org)
 (org-babel-load-file (expand-file-name "~/.emacs.d/settings.org"))
@@ -11,6 +11,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(ein:output-area-inlined-images t)
+ '(org-babel-load-languages (quote ((ein . t) (emacs-lisp . t))))
  '(package-selected-packages
    (quote
     (monokai-theme ein company-anaconda anaconda-mode company-quickhelp company paredit iedit magit org-superstar ido-grid-mode counsel list-packages-ext yasnippet-snippets find-file-in-project elpy))))
@@ -35,3 +36,5 @@
 (add-to-list 'load-path "~/.emacs.d/lisp/") ; Tell emacs where your personal elisp lib dir is
 (require 'cursor-chg)  ; Load the library
 (toggle-cursor-type-when-idle 1) ; Turn on cursor change when Emacs is idle
+
+(require 'ob-ein)
