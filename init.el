@@ -1,7 +1,14 @@
 (package-initialize)
 
-;(elpy-enable) ; enables elpy, bit ronseal innit
-(advice-add 'python-mode :before 'elpy-enable)
+(elpy-enable) ; enables elpy, bit ronseal innit
+;(advice-add 'python-mode :before 'elpy-enable)
+(setq python-shell-interpreter "jupyter"
+      python-shell-interpreter-args "console --simple-prompt"
+      python-shell-prompt-detect-failure-warning nil)
+(add-to-list 'python-shell-completion-native-disabled-interpreters
+			  "jupyter")
+
+
 
 (require 'org)
 (org-babel-load-file (expand-file-name "~/.emacs.d/settings.org"))
@@ -38,3 +45,5 @@
 (toggle-cursor-type-when-idle 1) ; Turn on cursor change when Emacs is idle
 
 (require 'ob-ein)
+
+
