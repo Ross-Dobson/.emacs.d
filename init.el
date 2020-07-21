@@ -1,14 +1,21 @@
 (package-initialize)
 
-(elpy-enable) ; enables elpy, bit ronseal innit
-;(advice-add 'python-mode :before 'elpy-enable)
+
+
+;TODO - make this so we don't have to enable elpy and disable it again. Would save massively on load times...
+
+(elpy-enable) ; enables elpy, in order that we can set this stuff.
+(add-to-list 'python-shell-completion-native-disabled-interpreters
+			  "jupyter")
 (setq python-shell-interpreter "jupyter"
       python-shell-interpreter-args "console --simple-prompt"
       python-shell-prompt-detect-failure-warning nil)
-(add-to-list 'python-shell-completion-native-disabled-interpreters
-			  "jupyter")
 
+(elpy-disable) ; disables elpy again in case editing non .py files
 
+(advice-add 'python-mode :before 'elpy-enable) ; waits until we're in python mode again to load elpy
+
+;;
 
 (require 'org)
 (org-babel-load-file (expand-file-name "~/.emacs.d/settings.org"))
