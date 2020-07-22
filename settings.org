@@ -205,6 +205,12 @@ Allows window configurations to be cycled with C-c right and C-c left
 
 #+END_SRC
 ** yasnippet snippets
+** all-the-icons
+*** Description
+*** Code
+#+BEGIN_SRC emacs-lisp
+(require 'all-the-icons)
+#+END_SRC
 * Keybindings
 ** Description
 When I think of a useful one, I'll add it here.
