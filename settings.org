@@ -217,11 +217,3 @@ When I think of a useful one, I'll add it here.
 ** Code
 #+BEGIN_SRC emacs-lisp
 #+END_SRC
-* elpa stuff temporarily
-#+BEGIN_SRC emacs-lisp
-(setq python-shell-interpreter "jupyter"
-      python-shell-interpreter-args "console --simple-prompt"
-      python-shell-prompt-detect-failure-warning nil)
-(add-to-list 'python-shell-completion-native-disabled-interpreters
-             "jupyter")
-#+END_SRC
