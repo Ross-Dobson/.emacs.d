@@ -214,6 +214,16 @@ Allows window configurations to be cycled with C-c right and C-c left
 (require 'all-the-icons)
 (add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
 #+END_SRC
+** doom-modeline
+*** Description
+A better looking modeline (the status bar along the bottom of each frame)
+- checks for package
+- initializes package
+*** Code
+#+BEGIN_SRC emacs-lisp
+(require 'doom-modeline)
+(doom-modeline-mode 1)
+#+END_SRC
 * Keybindings
 ** Description
 When I think of a useful one, I'll add it here.
