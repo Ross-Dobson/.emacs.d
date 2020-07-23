@@ -242,6 +242,17 @@ A better looking modeline (the status bar along the bottom of each frame)
 (require 'doom-modeline)
 (doom-modeline-mode 1)
 #+END_SRC
+** projectile
+*** Description
+Manages projects, works from .git files but can just define a .projectile file anywhere
+- starts projectile mode
+- defines keyboard shortcuts
+*** Code
+#+BEGIN_SRC emacs-lisp
+(projectile-mode +1)
+(define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
+(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+#+END_SRC
 * Keybindings
 ** Description
 When I think of a useful one, I'll add it here.
