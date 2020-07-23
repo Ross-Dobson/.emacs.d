@@ -253,6 +253,12 @@ Manages projects, works from .git files but can just define a .projectile file a
 (define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 #+END_SRC
+** page-break-lines
+*** Description
+*** Code
+#+BEGIN_SRC emacs-lisp
+(global-page-break-lines-mode t)
+#+END_SRC
 * Keybindings
 ** Description
 When I think of a useful one, I'll add it here.
