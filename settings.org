@@ -12,8 +12,12 @@
 * Theme
 ** monokai-pro
 #+BEGIN_SRC emacs-lisp
-(add-hook 'after-init-hook 
+(if (display-graphic-p)
+    (progn
+    ;; if graphic
+    (add-hook 'after-init-hook 
 	  (lambda () (load-theme 'monokai-pro t)))
+	  ))
 #+END_SRC
 * Variables for modes
 ** Display & Input
