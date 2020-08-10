@@ -48,7 +48,7 @@ Basic display & inputs:
 (scroll-bar-mode -1)
 (setq inhibit-splash-screen t)
 (setq make-backup-files nil)
-(global-linum-mode 1)
+(global-linum-mode 0)
 (setq column-number-mode t)
 (toggle-frame-maximized)
 (defalias 'yes-or-no-p 'y-or-n-p)
@@ -58,8 +58,6 @@ Basic display & inputs:
 (savehist-mode 1)
 (global-auto-revert-mode 1)
 (global-visual-line-mode 1)
-(setq split-width-threshold 0)
-(setq split-height-threshold nil)
 
 #+END_SRC
 
