@@ -4,3 +4,7 @@
 !lisp
 /lisp/*
 !/lisp/*.el
+!elpa
+!elpa/**
+!elpy
+!elpy/**
