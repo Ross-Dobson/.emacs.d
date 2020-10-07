@@ -104,6 +104,9 @@ Allows window configurations to be cycled with C-c right and C-c left
 (elpy-disable) ; disables elpy again in case editing non .py files
 
 (advice-add 'python-mode :before 'elpy-enable) ; waits until we're in python mode again to load elpy
+
+(advice-add 'pyvenv-workon :before 'flymake-mode) ; same but for flymake mode
+
 (defalias 'workon 'pyvenv-workon) ; saves me typing "SPC+workon" rather than just "workon". Holy moly, am I lazy or what?
 #+END_SRC
 ** ido grid mode
