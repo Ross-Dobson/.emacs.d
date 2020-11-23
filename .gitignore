@@ -6,3 +6,4 @@
 !/lisp/*.el
 !elpa
 !elpa/**
+.pyc
