@@ -6,4 +6,5 @@
 !/lisp/*.el
 !elpa
 !elpa/**
+elpy/rpc-venv/lib
 .pyc
